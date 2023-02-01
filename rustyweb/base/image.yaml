@@ -3,8 +3,7 @@ kind: Image
 metadata:
   name: rustyweb
   namespace: default
-  metadata:
-    argocd.argoproj.io/sync-wave: "-1"
+  argocd.argoproj.io/sync-wave: "-1"
   labels:
     app: rustyweb
 spec:
@@ -14,7 +13,6 @@ spec:
     kind: Builder
   serviceAccountName: kpack-builder
   build:
-    env: []
     resources:
       requests:
         ephemeral-storage: 4G
