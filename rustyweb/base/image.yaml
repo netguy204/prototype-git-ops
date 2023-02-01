@@ -3,7 +3,8 @@ kind: Image
 metadata:
   name: rustyweb
   namespace: default
-  argocd.argoproj.io/sync-wave: "-1"
+  annotations:
+    argocd.argoproj.io/sync-wave: "-1"
   labels:
     app: rustyweb
 spec:
