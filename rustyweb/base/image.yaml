@@ -12,6 +12,7 @@ spec:
   builder:
     name: rust-builder
     kind: Builder
+  serviceAccountName: kpack-builder
   build:
     env: {}
     resources:
