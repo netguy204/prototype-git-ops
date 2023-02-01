@@ -1,0 +1,10 @@
+apiVersion: kpack.io/v1alpha2
+kind: Image
+metadata:
+  name: rustyweb
+spec:
+  additionalTags:
+  - v0.0.1
+  source:
+    git:
+      revision: v0.0.1

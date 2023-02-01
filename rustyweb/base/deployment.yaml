@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rustyweb
+  namespace: default
+  labels:
+    app: rustyweb
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: rustyweb
+  template:
+    metadata:
+      labels:
+        app: rustyweb
+    spec:
+      containers:
+      - name: app
+        image: us-east1-docker.pkg.dev/prod-prototype/default/rustyweb:next
+        ports:
+        - name: http
+          containerPort: 8080
+          protocol: TCP

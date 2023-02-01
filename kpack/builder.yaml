@@ -1,0 +1,23 @@
+apiVersion: kpack.io/v1alpha2
+kind: Builder
+metadata:
+  name: rust-builder
+  namespace: default
+spec:
+  serviceAccountName: kpack-builder
+  tag: us-east1-docker.pkg.dev/prod-prototype/default/rust-builder
+  stack:
+    name: base
+    kind: ClusterStack
+  store:
+    name: default
+    kind: ClusterStore
+  order:
+  - group:
+    - id: paketo-buildpacks/java
+  - group:
+    - id: paketo-buildpacks/nodejs
+  - group:
+    - id: paketo-buildpacks/httpd
+  - group:
+    - id: paketo-community/rust

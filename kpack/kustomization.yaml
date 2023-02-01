@@ -1,0 +1,5 @@
+resources:
+- builder.yaml
+- cluster_stack.yaml
+- cluster_store.yaml
+- service_account.yaml

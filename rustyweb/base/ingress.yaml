@@ -1,0 +1,22 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: rustyweb-http-ingress
+  namespace: default
+  annotations:
+    konghq.com/protocols: http
+    konghq.com/strip-path: 'true'
+  labels:
+    app: rustyweb
+spec:
+  ingressClassName: kong
+  rules:
+  - http:
+      paths:
+      - path: /rustyweb
+        pathType: Prefix
+        backend:
+          service:
+            name: rustyweb
+            port:
+              number: 80

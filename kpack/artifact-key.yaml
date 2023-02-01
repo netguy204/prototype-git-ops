@@ -1,0 +1,7 @@
+apiVersion: v1
+stringData:
+  .dockerconfigjson: <kp cli generates this whole resource quite well via a base64 encoded secret and username>
+kind: Secret
+metadata:
+  name: artifact-key
+type: kubernetes.io/dockerconfigjson

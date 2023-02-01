@@ -1,0 +1,25 @@
+apiVersion: kpack.io/v1alpha2
+kind: Image
+metadata:
+  name: rustyweb
+  namespace: default
+  metadata:
+    argocd.argoproj.io/sync-wave: "-1"
+  labels:
+    app: rustyweb
+spec:
+  tag: us-east1-docker.pkg.dev/prod-prototype/default/rustyweb
+  builder:
+    name: rust-builder
+    kind: Builder
+  build:
+    env: {}
+    resources:
+      requests:
+        cpu: 2
+      limits:
+        cpu: 2
+  source:
+    git:
+      url: https://github.com/netguy204/rustyweb
+      revision: version
