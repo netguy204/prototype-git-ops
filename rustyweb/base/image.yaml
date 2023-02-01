@@ -14,7 +14,7 @@ spec:
     kind: Builder
   serviceAccountName: kpack-builder
   build:
-    env: {}
+    env: []
     resources:
       requests:
         cpu: 2
