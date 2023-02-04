@@ -1,0 +1,10 @@
+apiVersion: kpack.io/v1alpha2
+kind: Image
+metadata:
+  name: rustyweb
+spec:
+  additionalTags:
+  - us-east1-docker.pkg.dev/prod-prototype/default/rustyweb:__REVISION__
+  source:
+    git:
+      revision: __REVISION__
