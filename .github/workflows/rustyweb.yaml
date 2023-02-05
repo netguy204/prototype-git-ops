@@ -11,7 +11,8 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-      token: ${{ secrets.GITOPS_ACCESS }}
+      with:
+        token: ${{ secrets.GITOPS_ACCESS }}
     - name: Await deploy and then bump
       run: |
         set -ex
