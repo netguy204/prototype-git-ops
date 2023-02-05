@@ -3,6 +3,13 @@ kind: Image
 metadata:
   name: __NAME__
 spec:
+  template:
+    spec:
+      containers:
+      - name: app
+        env:
+        - name: REVISION
+          value: __REVISION__
   additionalTags:
   - us-east1-docker.pkg.dev/prod-prototype/default/__NAME__:__REVISION__
   source:
