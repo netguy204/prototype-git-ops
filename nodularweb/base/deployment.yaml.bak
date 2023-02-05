@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: __NAME__
+  namespace: default
+  labels:
+    app: __NAME__
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: __NAME__
+  template:
+    metadata:
+      labels:
+        app: __NAME__
+    spec:
+      containers:
+      - name: app
+        image: us-east1-docker.pkg.dev/prod-prototype/default/__NAME__:next
+        ports:
+        - name: http
+          containerPort: 8080
+          protocol: TCP

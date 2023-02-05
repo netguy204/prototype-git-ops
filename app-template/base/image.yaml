@@ -1,0 +1,27 @@
+apiVersion: kpack.io/v1alpha2
+kind: Image
+metadata:
+  name: __NAME__
+  namespace: default
+  annotations:
+    argocd.argoproj.io/sync-wave: "-1"
+  labels:
+    app: __NAME__
+spec:
+  tag: us-east1-docker.pkg.dev/prod-prototype/default/__NAME__
+  builder:
+    name: rust-builder
+    kind: Builder
+  serviceAccountName: kpack-builder
+  build:
+    resources:
+      requests:
+        ephemeral-storage: 4G
+        cpu: '2'
+      limits:
+        ephemeral-storage: 4G
+        cpu: '2'
+  source:
+    git:
+      url: https://github.com/netguy204/__NAME__
+      revision: version

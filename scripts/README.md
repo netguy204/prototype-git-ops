@@ -1,3 +1,5 @@
 # Overlap Templates
 
-These files are template expanded and written into the target overlap directory of prototype-git-ops
+- expand.sh Expands templates into their corresponding overlay
+```
+scripts/expand.sh v0.0.1 rustyweb/templates/production rustyweb/overlays/production

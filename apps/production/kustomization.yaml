@@ -1,2 +1,5 @@
+
+# resources must come last for new_app.sh to work correctly
 resources:
 - rustyweb.yaml
+- nodularweb.yaml

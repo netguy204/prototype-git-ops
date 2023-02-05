@@ -1,0 +1,10 @@
+apiVersion: kpack.io/v1alpha2
+kind: Image
+metadata:
+  name: __NAME__
+spec:
+  additionalTags:
+  - us-east1-docker.pkg.dev/prod-prototype/default/__NAME__:__REVISION__
+  source:
+    git:
+      revision: __REVISION__
