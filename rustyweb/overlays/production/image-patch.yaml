@@ -3,8 +3,15 @@ kind: Image
 metadata:
   name: rustyweb
 spec:
+  template:
+    spec:
+      containers:
+      - name: app
+        env:
+        - name: REVISION
+          value: d993252fb11cfea9d301235d21cbb975348fea5a
   additionalTags:
-  - us-east1-docker.pkg.dev/prod-prototype/default/rustyweb:985ff9fac3b9a6ad2ba4641b5b2fe801efee3961
+  - us-east1-docker.pkg.dev/prod-prototype/default/rustyweb:d993252fb11cfea9d301235d21cbb975348fea5a
   source:
     git:
-      revision: 985ff9fac3b9a6ad2ba4641b5b2fe801efee3961
+      revision: d993252fb11cfea9d301235d21cbb975348fea5a
