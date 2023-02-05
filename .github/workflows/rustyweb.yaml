@@ -13,7 +13,8 @@ jobs:
       uses: actions/checkout@v2
     - name: Await deploy and then bump
       run: |
-        scripts/await_revision.sh `git rev-parse HEAD` http://34.148.116.86/rustyweb/revision 600
+        target_revision=`grep revision rustyweb/overlays/production/image-patch.yaml | sed 's/revision: //g' | xargs`
+        scripts/await_revision.sh $target_revision http://34.148.116.86/rustyweb/revision 600
         BRANCH="rustyweb_production_deployed"
         git branch -f $BRANCH rustyweb_production_released_to_deploy
         git checkout $BRANCH
