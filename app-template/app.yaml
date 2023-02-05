@@ -10,6 +10,7 @@ spec:
   source:
     path: __NAME__/overlays/production
     repoURL: https://github.com/netguy204/prototype-git-ops
+    targetRevision: __NAME___production_released_to_deploy
   syncPolicy:
     automated: {}
     syncOptions:
