@@ -11,8 +11,10 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
+      token: ${{ secrets.GITOPS_ACCESS }}
     - name: Await deploy and then bump
       run: |
+        set -ex
         target_revision=`grep revision rustyweb/overlays/production/image-patch.yaml | sed 's/revision: //g' | xargs`
         scripts/await_revision.sh $target_revision http://34.148.116.86/rustyweb/revision 600
         BRANCH="rustyweb_production_deployed"
