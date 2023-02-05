@@ -10,6 +10,7 @@ spec:
   source:
     path: nodularweb/overlays/production
     repoURL: https://github.com/netguy204/prototype-git-ops
+    targetRevision: nodularweb_production_released_to_deploy
   syncPolicy:
     automated: {}
     syncOptions:

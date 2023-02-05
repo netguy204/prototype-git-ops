@@ -1,0 +1,20 @@
+name: await rustyweb deploy
+on:
+  push:
+    branches:
+    - rustyweb_production_released_to_deploy
+
+jobs:
+  update-ops:
+    name: await deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Await deploy and then bump
+      run: |
+        scripts/await_revision.sh `git rev-parse HEAD` http://34.148.116.86/rustyweb/revision 600
+        BRANCH="rustyweb_production_deployed"
+        git branch -f $BRANCH rustyweb_production_released_to_deploy
+        git checkout $BRANCH
+        git push -f origin $BRANCH
