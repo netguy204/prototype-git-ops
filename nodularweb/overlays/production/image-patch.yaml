@@ -1,0 +1,10 @@
+apiVersion: kpack.io/v1alpha2
+kind: Image
+metadata:
+  name: nodularweb
+spec:
+  additionalTags:
+  - us-east1-docker.pkg.dev/prod-prototype/default/nodularweb:597ce30e34e161e3f08ec098418ed43eada491fc
+  source:
+    git:
+      revision: 597ce30e34e161e3f08ec098418ed43eada491fc

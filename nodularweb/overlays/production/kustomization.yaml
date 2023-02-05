@@ -8,5 +8,5 @@ patchesStrategicMerge:
 - image-patch.yaml
 
 images:
-- name: us-east1-docker.pkg.dev/prod-prototype/default/rustyweb
-  newTag: 985ff9fac3b9a6ad2ba4641b5b2fe801efee3961
+- name: us-east1-docker.pkg.dev/prod-prototype/default/nodularweb
+  newTag: 597ce30e34e161e3f08ec098418ed43eada491fc
