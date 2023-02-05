@@ -1,0 +1,12 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rustyweb
+spec:
+  template:
+    spec:
+      containers:
+      - name: app
+        env:
+        - name: REVISION
+          value: 3db7555f4ae6322432aa7e6af033cb4024700c94
