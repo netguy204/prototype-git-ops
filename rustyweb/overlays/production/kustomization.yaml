@@ -9,4 +9,4 @@ patchesStrategicMerge:
 
 images:
 - name: us-east1-docker.pkg.dev/prod-prototype/default/rustyweb
-  newTag: b4741e92a043b7332665b88310e575af32728b4e
+  newTag: 6b13395230c51004c97bbda036cd5ec718b64b46
