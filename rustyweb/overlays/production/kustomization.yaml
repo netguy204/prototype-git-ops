@@ -6,7 +6,8 @@ resources:
 
 patchesStrategicMerge:
 - image-patch.yaml
+- deploy-patch.yaml
 
 images:
 - name: us-east1-docker.pkg.dev/prod-prototype/default/rustyweb
-  newTag: 3db7555f4ae6322432aa7e6af033cb4024700c94
+  newTag: 1ef0eb4c75cb650f1019e1cd88ea798b593190ae
