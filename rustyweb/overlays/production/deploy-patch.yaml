@@ -9,4 +9,4 @@ spec:
       - name: app
         env:
         - name: REVISION
-          value: 7101c0a6c430e4bd6c24cd9cb8cd955bfac19122
+          value: 011389bd04f7a835b8884816a898a9e054906f5f
