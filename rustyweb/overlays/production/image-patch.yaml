@@ -9,9 +9,9 @@ spec:
       - name: app
         env:
         - name: REVISION
-          value: d993252fb11cfea9d301235d21cbb975348fea5a
+          value: 48908fbc9b23c4f5daf3a151ac32086013d94e4f
   additionalTags:
-  - us-east1-docker.pkg.dev/prod-prototype/default/rustyweb:d993252fb11cfea9d301235d21cbb975348fea5a
+  - us-east1-docker.pkg.dev/prod-prototype/default/rustyweb:48908fbc9b23c4f5daf3a151ac32086013d94e4f
   source:
     git:
-      revision: d993252fb11cfea9d301235d21cbb975348fea5a
+      revision: 48908fbc9b23c4f5daf3a151ac32086013d94e4f
