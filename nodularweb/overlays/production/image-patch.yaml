@@ -3,13 +3,6 @@ kind: Image
 metadata:
   name: nodularweb
 spec:
-  template:
-    spec:
-      containers:
-      - name: app
-        env:
-        - name: REVISION
-          value: 8d8ecce5c34fca6ddb544d7d4c2fae2f0723c7da
   additionalTags:
   - us-east1-docker.pkg.dev/prod-prototype/default/nodularweb:8d8ecce5c34fca6ddb544d7d4c2fae2f0723c7da
   source:
