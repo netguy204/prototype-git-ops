@@ -13,6 +13,9 @@ spec:
     name: rust-builder
     kind: Builder
   serviceAccountName: kpack-builder
+  env:
+  - name: NODE_OPTIONS
+    value: "--openssl-legacy-provider"
   build:
     resources:
       requests:
