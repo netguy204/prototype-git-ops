@@ -27,7 +27,7 @@ fi
 cp -r $TEMPLATE_DIR/* $TARGET/
 if [[ "$OSTYPE" == "darwin"* ]]; then
     find $TARGET -type f -exec sed -i '.bak' "s/$VARNAME/$REVISION/g" {} +
-    rm $TARGET/*.bak
+    find $TARGET -name '*.bak' -exec rm {} +
 else
     find $TARGET -type f -exec sed -i "s/$VARNAME/$REVISION/g" {} +
 fi
