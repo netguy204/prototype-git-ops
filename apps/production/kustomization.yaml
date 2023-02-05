@@ -3,3 +3,4 @@
 resources:
 - rustyweb.yaml
 - nodularweb.yaml
+- kpack.yaml
