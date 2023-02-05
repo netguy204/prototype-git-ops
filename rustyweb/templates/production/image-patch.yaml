@@ -3,13 +3,6 @@ kind: Image
 metadata:
   name: rustyweb
 spec:
-  template:
-    spec:
-      containers:
-      - name: app
-        env:
-        - name: REVISION
-          value: __REVISION__
   additionalTags:
   - us-east1-docker.pkg.dev/prod-prototype/default/rustyweb:__REVISION__
   source:
