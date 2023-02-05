@@ -6,6 +6,7 @@ resources:
 
 patchesStrategicMerge:
 - image-patch.yaml
+- deploy-patch.yaml
 
 images:
 - name: us-east1-docker.pkg.dev/prod-prototype/default/rustyweb
