@@ -4,7 +4,7 @@ metadata:
   name: rustyweb
 spec:
   additionalTags:
-  - us-east1-docker.pkg.dev/prod-prototype/default/rustyweb:6f59b3e99b24486ad795b84ce863aa0c0c9cb384
+  - us-east1-docker.pkg.dev/prod-prototype/default/rustyweb:b4741e92a043b7332665b88310e575af32728b4e
   source:
     git:
-      revision: 6f59b3e99b24486ad795b84ce863aa0c0c9cb384
+      revision: b4741e92a043b7332665b88310e575af32728b4e
