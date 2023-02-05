@@ -4,7 +4,7 @@ metadata:
   name: nodularweb
 spec:
   additionalTags:
-  - us-east1-docker.pkg.dev/prod-prototype/default/nodularweb:b8cd45f822fba2c31479f2b09ee1a5c7273c021e
+  - us-east1-docker.pkg.dev/prod-prototype/default/nodularweb:4597be8995cb575ec0819c6f1c14bd6e12730773
   source:
     git:
-      revision: b8cd45f822fba2c31479f2b09ee1a5c7273c021e
+      revision: 4597be8995cb575ec0819c6f1c14bd6e12730773

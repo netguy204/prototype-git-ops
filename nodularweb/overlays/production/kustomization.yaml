@@ -9,4 +9,4 @@ patchesStrategicMerge:
 
 images:
 - name: us-east1-docker.pkg.dev/prod-prototype/default/nodularweb
-  newTag: b8cd45f822fba2c31479f2b09ee1a5c7273c021e
+  newTag: 4597be8995cb575ec0819c6f1c14bd6e12730773
